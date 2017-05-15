@@ -11,7 +11,12 @@ achieve real-time render result in windows. The ray trace function is coming soo
 	* Interaction between ray trace and real time scene.  
 	* Some Non photorealistic rendering function.  
 	* and so on ...
-	
+  
+  
+2.UI:  
+![](https://github.com/ChengGongXTU/SeaAsia/blob/master/SeaAsia%20sample.png)
+ 
+ 
 2.How to use it  
 ------------  
 * install and support:  
