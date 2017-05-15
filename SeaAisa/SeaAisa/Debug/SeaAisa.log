@@ -1,0 +1,925 @@
+﻿生成启动时间为 2017/5/15 23:39:28。
+     1>项目“C:\Users\lenovo\Documents\Visual Studio 2015\Projects\SeaAisa\SeaAisa\SeaAisa.vcxproj”在节点 2 上(Build 个目标)。
+     1>FxCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\fxc.exe /nologo /E"VS" /T vs_4_0 /Fo "C:\Users\lenovo\Documents\Visual Studio 2015\Projects\SeaAisa\Debug\hlsl.cso" /Od /Zi hlsl.fx 
+         compilation object save succeeded; see C:\Users\lenovo\Documents\Visual Studio 2015\Projects\SeaAisa\Debug\hlsl.cso
+       ClCompile:
+         F:\vs2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt basicmanager.cpp camera.cpp cameramanager.cpp dxcamera.cpp dxdevice.cpp dxobj.cpp dxscene.cpp imgui.cpp imgui_demo.cpp imgui_draw.cpp imgui_impl_dx11.cpp lightmanager.cpp lowlevelrendermanager.cpp main.cpp mainwindowui.cpp materialsmanager.cpp objmanager.cpp primitivemanager.cpp scenemanager.cpp shadermanager.cpp shape.cpp texture.cpp texturemanager.cpp transform.cpp wcharandwstring.cpp windowsDevice.cpp
+         windowsDevice.cpp
+         wcharandwstring.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+         transform.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+         texturemanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+         texture.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\texture.cpp(6): warning C4800: “errno_t”: 将值强制为布尔值“true”或“false”(性能警告)
+         shape.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.cpp(247): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+         shadermanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+         scenemanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+         primitivemanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\primitivemanager.cpp(27): warning C4156: 未使用数组形式的“delete”删除数组表达式；数组形式被替代
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\primitivemanager.cpp(27): warning C4154: 删除数组表达式；转换到提供的指针
+         objmanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+         materialsmanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\materialsmanager.cpp(16): warning C4244: “=”: 从“float”转换到“long”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\materialsmanager.cpp(112): warning C4244: “=”: 从“float”转换到“long”，可能丢失数据
+         mainwindowui.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(114): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(115): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(79): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(85): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(97): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(168): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(458): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(459): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(624): warning C4305: “初始化”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(651): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(655): warning C4305: “=”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(658): warning C4305: “=”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(661): warning C4305: “=”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(715): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(719): warning C4305: “=”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(722): warning C4305: “=”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(725): warning C4305: “=”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(833): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(834): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(1093): warning C4244: “=”: 从“long”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\mainwindowui.cpp(1106): warning C4244: “=”: 从“float”转换到“long”，可能丢失数据
+         main.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+         lowlevelrendermanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\lowlevelrendermanager.cpp(148): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\lowlevelrendermanager.cpp(149): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\lowlevelrendermanager.cpp(156): warning C4244: “=”: 从“float”转换到“UINT”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\lowlevelrendermanager.cpp(157): warning C4244: “=”: 从“float”转换到“UINT”，可能丢失数据
+         lightmanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+         imgui_impl_dx11.cpp
+         imgui_draw.cpp
+         imgui_demo.cpp
+         imgui.cpp
+         dxscene.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\dxscene.cpp(21): warning C4316: “Unity”: 在堆上分配的对象可能不是对齐 16
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\dxscene.cpp(32): warning C4316: “DxCamera”: 在堆上分配的对象可能不是对齐 16
+         正在生成代码...
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\lowlevelrendermanager.cpp(311): warning C4715: “LowLevelRendermanager::LoadUnityFromObjFile”: 不是所有的控件路径都返回值
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\windowsdevice.cpp(44): warning C4715: “WindowsDevice::Init”: 不是所有的控件路径都返回值
+         正在编译...
+         dxobj.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+         dxdevice.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+         dxcamera.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\dxcamera.cpp(11): warning C4305: “=”: 从“double”到“float”截断
+         cameramanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+         camera.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\camera.h(81): warning C4244: “=”: 从“const int”转换到“float”，可能丢失数据
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\camera.h(82): warning C4244: “=”: 从“const int”转换到“float”，可能丢失数据
+         basicmanager.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2662): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2663): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2664): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2665): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2666): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2667): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2668): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2689): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2690): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2691): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2694): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2695): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2698): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2702): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2712): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2713): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2715): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2716): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2717): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2727): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2728): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2729): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2730): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2731): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2732): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2742): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2743): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamath.h(2754): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(2254): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4523): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4577): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4639): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4707): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4770): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathconvert.inl(4832): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathvector.inl(1269): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(518): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\program files (x86)\windows kits\8.1\include\um\xnamathmisc.inl(519): warning C4838: 从“unsigned int”转换到“INT”需要收缩转换
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(124): warning C4305: “参数”: 从“double”到“float”截断
+     1>c:\users\lenovo\documents\visual studio 2015\projects\seaaisa\seaaisa\shape.h(188): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+         正在生成代码...
+       Link:
+         F:\vs2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lenovo\Documents\Visual Studio 2015\Projects\SeaAisa\Debug\SeaAisa.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\/Lib/x86" d2d1.lib d3d11.lib dxgi.lib d3dcompiler.lib d3dx11.lib d3dx11d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\lenovo\Documents\Visual Studio 2015\Projects\SeaAisa\Debug\SeaAisa.pdb" /SUBSYSTEM:WINDOWS /HEAP:"10485760" /STACK:"10485760" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lenovo\Documents\Visual Studio 2015\Projects\SeaAisa\Debug\SeaAisa.lib" /MACHINE:X86 Debug\basicmanager.obj
+         Debug\camera.obj
+         Debug\cameramanager.obj
+         Debug\dxcamera.obj
+         Debug\dxdevice.obj
+         Debug\dxobj.obj
+         Debug\dxscene.obj
+         Debug\imgui.obj
+         Debug\imgui_demo.obj
+         Debug\imgui_draw.obj
+         Debug\imgui_impl_dx11.obj
+         Debug\lightmanager.obj
+         Debug\lowlevelrendermanager.obj
+         Debug\main.obj
+         Debug\mainwindowui.obj
+         Debug\materialsmanager.obj
+         Debug\objmanager.obj
+         Debug\primitivemanager.obj
+         Debug\scenemanager.obj
+         Debug\shadermanager.obj
+         Debug\shape.obj
+         Debug\texture.obj
+         Debug\texturemanager.obj
+         Debug\transform.obj
+         Debug\wcharandwstring.obj
+         Debug\windowsDevice.obj
+         SeaAisa.vcxproj -> C:\Users\lenovo\Documents\Visual Studio 2015\Projects\SeaAisa\Debug\SeaAisa.exe
+     1>已完成生成项目“C:\Users\lenovo\Documents\Visual Studio 2015\Projects\SeaAisa\SeaAisa\SeaAisa.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:33.19
