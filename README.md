@@ -14,14 +14,45 @@ achieve real-time render result in windows. The ray trace function is coming soo
   
   
 2.UI:  
+--------  
 ![](https://github.com/ChengGongXTU/SeaAsia/blob/master/SeaAsia%20sample.png)
  
  
-2.How to use it  
+3.How to use it  
 ------------  
 * install and support:  
 	* Download project and open "SeaAisa.sln" by Visual Studio (I write C++ by VS 2015).  
 	* Make sure  your VS have input DX11 include and libs.
 	* Click  "run", and software can begin working.  
 	  
-* SeaAsia Usage:
+* SeaAsia Usage:  
+	* First, check Main menu.  
+	It is the top of window, you can use it to open every function window.
+	![](https://github.com/ChengGongXTU/SeaAsia/blob/master/3.jpg)  
+	  
+	* Second, Choose a scene you want to render.  
+	Key Frame View shows all the scenes witch can be rendered, I set the max number of scene to be 24.  
+	![](https://github.com/ChengGongXTU/SeaAsia/blob/master/4.jpg)  
+	  
+	* Third, setting render resource.  
+	Resource Setting View provide the function of input, including triangle mesh, camera and light input.  
+		* 1.input unity by loading traingle mesh, material and texture image file. (Now, it can only load ".obj" and ".mtl"file).  
+		* 2.setting camera and light resource.  
+		* 3.a simple senen has been built.  
+  ![](https://github.com/ChengGongXTU/SeaAsia/blob/master/1.jpg)  
+	  
+	* Forth, setting render pipeline step by step:  
+		* 1.Create shader code.  
+		* 2.Setting render scene's ID.  
+		* 3.Create Camera and Light constant.  
+		And the render result will show in windows.  
+	![](https://github.com/ChengGongXTU/SeaAsia/blob/master/2.jpg)  
+	  
+4.More suggestion：  
+-------------------  
+
+* Change it by yourself:  
+I will update a framework image to describe each part of this render. and tell you how to use and change source code, make it become your candy cat.  
+* If you have some suggestion about this software, or other idea about computer graphic and non-photorealistic rendering (especially in academically research!), send e-mail to me.  
+
+* My e-mail: 'chenggong.office@foxmail.com'.
