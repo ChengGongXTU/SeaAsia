@@ -12,8 +12,8 @@ void DxCamera::Init(WindowsDevice & Dev)
 	cNear = 1.f;
 	cFar = 10000.f;
 
-	cWidth = 1.f;
-	cHeight = 1.f;
+	cWidth =Dev.w;
+	cHeight = Dev.h;
 
 
 	mView = XMMatrixLookAtLH(eye, at, up);

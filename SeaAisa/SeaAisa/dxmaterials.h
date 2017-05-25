@@ -35,4 +35,21 @@ public:
 		mtlType = mtlDiffuse;
 	}
 	
+
+	DxMaterials &operator=(const DxMaterials &mtl) {
+		parameter.Ka = mtl.parameter.Ka;
+		parameter.Kd = mtl.parameter.Kd;
+		parameter.Ke = mtl.parameter.Ke;
+		parameter.Ks = mtl.parameter.Ks;
+
+		parameter.alpha = mtl.parameter.alpha;
+		parameter.illum = mtl.parameter.illum;
+		parameter.Ni = mtl.parameter.Ni;
+		parameter.Ns = mtl.parameter.Ns;
+
+		mtlType = mtl.mtlType;
+		return *this;
+	}
+
+
 };

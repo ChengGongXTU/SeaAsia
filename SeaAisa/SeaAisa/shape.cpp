@@ -1,239 +1,6 @@
 #include"shape.h"
 
-Box Union(const Box &b, const Point &p) {
-	Box ret = b;
-	ret.minPoint.x = min(b.minPoint.x, p.x);
-	ret.minPoint.y = min(b.minPoint.y, p.y);
-	ret.minPoint.z = min(b.minPoint.z, p.z);
-	ret.maxPoint.x = max(b.maxPoint.x, p.x);
-	ret.maxPoint.y = max(b.maxPoint.y, p.y);
-	ret.maxPoint.z = max(b.maxPoint.z, p.z);
-	return ret;
-}
 
-Box Union(const Box &b, const Box &b2) {
-	Box ret;
-	ret.minPoint.x = min(b.minPoint.x, b2.minPoint.x);
-	ret.minPoint.y = min(b.minPoint.y, b2.minPoint.y);
-	ret.minPoint.z = min(b.minPoint.z, b2.minPoint.z);
-	ret.maxPoint.x = max(b.maxPoint.x, b2.maxPoint.x);
-	ret.maxPoint.y = max(b.maxPoint.y, b2.maxPoint.y);
-	ret.maxPoint.z = max(b.maxPoint.z, b2.maxPoint.z);
-	return ret;
-}
-
-void CutBox(const Camera &camera, Box *ret) {
-	if (ret->minPoint.x < 0) ret->minPoint.x = 0;
-	if (ret->minPoint.y < 0) ret->minPoint.y = 0;
-	if (ret->minPoint.z < 0) ret->minPoint.y = 0;
-}
-
-void LoadObj(TriangleMesh &mesh, string fileName) {
-
-	ifstream fl(fileName);
-	string line;
-	stringstream ss;
-	string word;
-	vector<float> vp;
-	vp.reserve(50000);
-	vector<float> vn;
-	vn.reserve(50000);
-	vector<int> vni;
-	vni.reserve(50000);
-	vector<int> vtri;
-	vtri.reserve(50000);
-	vector<float> vuv;
-	vuv.reserve(50000);
-	vector<int> vuvi;
-	vuvi.reserve(50000);
-
-	int pNum = 0, triNum = 0, nNum = 0, vuNum = 0;
-	int j, k, l;
-	float a, b, c;
-	string as, bs, cs;
-
-	//if (!fl)	return false;
-
-	while (getline(fl, line)) {
-		ss.clear();
-		ss.str(line);
-		ss >> word;
-		if ((int)word[0] == 118 && (int)word[1] == NULL) {
-			pNum++;
-			ss >> a >> b >> c;
-			vp.push_back(a);
-			vp.push_back(b);
-			vp.push_back(c);
-			continue;
-		}
-
-		if ((int)word[0] == 118 && (int)word[1] == 110) {
-			nNum++;
-			ss >> a >> b >> c;
-			vn.push_back(a);
-			vn.push_back(b);
-			vn.push_back(c);
-			continue;
-		}
-
-		if ((int)word[0] == 118 && (int)word[1] == 116) {
-			vuNum++;
-			a = b = c = 0.f;
-			ss >> a >> b >> c;
-			vuv.push_back(a);
-			vuv.push_back(b);
-			vuv.push_back(c);
-			continue;
-		}
-
-		if ((int)word[0] == 102 && (int)word[1] == NULL) {
-			triNum++;
-			ss >> as >> bs >> cs;
-			FindFace(as, j, k, l);
-			vtri.push_back(j);
-			vuvi.push_back(k);
-			vni.push_back(l);
-
-			FindFace(bs, j, k, l);
-			vtri.push_back(j);
-			vuvi.push_back(k);
-			vni.push_back(l);
-
-			FindFace(cs, j, k, l);
-			vtri.push_back(j);
-			vuvi.push_back(k);
-			vni.push_back(l);
-			continue;
-		}
-	}
-
-
-	//if (pNum == 0 && triNum == 0)	return false;
-
-	mesh.p = new Point[pNum];
-	mesh.n = new Normal[nNum];
-	mesh.uv = new float[3 * vuNum];
-
-	mesh.vi = new int[3 * triNum];
-	mesh.uvi = new int[3 * triNum];
-	mesh.ni = new int[3 * triNum];
-
-	mesh.verNum = pNum;
-	mesh.triNum = triNum;
-	mesh.nNum = nNum;
-	mesh.uvNum = vuNum;
-
-	//Point
-	for (int i = 0; i < pNum; i++) {
-		mesh.p[i].x = vp[i * 3];
-		mesh.p[i].y = vp[i * 3 + 1];
-		mesh.p[i].z = vp[i * 3 + 2];
-	}
-	vp.clear();
-	vector<float>().swap(vp);
-
-	//Normal
-	for (int i = 0; i < nNum; i++) {
-		mesh.n[i].x = vn[i * 3];
-		mesh.n[i].y = vn[i * 3 + 1];
-		mesh.n[i].z = vn[i * 3 + 2];
-	}
-	vn.clear();
-	vector<float>().swap(vn);
-
-	//normal's indices
-	for (int i = 0; i < triNum; i++) {
-		mesh.ni[i * 3] = vni[i * 3];
-		mesh.ni[i * 3 + 1] = vni[i * 3 + 1];
-		mesh.ni[i * 3 + 2] = vni[i * 3 + 2];
-	}
-	vni.clear();
-	vector<int>().swap(vni);
-
-	//triangle's veretx indices
-	for (int i = 0; i < triNum; i++) {
-		mesh.vi[i * 3] = vtri[i * 3];
-		mesh.vi[i * 3 + 1] = vtri[i * 3 + 1];
-		mesh.vi[i * 3 + 2] = vtri[i * 3 + 2];
-	}
-	vtri.clear();
-	vector<int>().swap(vtri);
-
-	//texture's position
-	for (int i = 0; i < vuNum; i++) {
-		mesh.uv[i * 3] = vuv[i * 3];
-		mesh.uv[i * 3 + 1] = vuv[i * 3 + 1];
-		mesh.uv[i * 3 + 2] = vuv[i * 3 + 2];
-	}
-	vuv.clear();
-	vector<float>().swap(vuv);
-
-	//triangle's vertex texture indices
-	for (int i = 0; i < triNum; i++) {
-		mesh.uvi[i * 3] = vuvi[i * 3];
-		mesh.uvi[i * 3 + 1] = vuvi[i * 3 + 1];
-		mesh.uvi[i * 3 + 2] = vuvi[i * 3 + 2];
-	}
-	vuvi.clear();
-	vector<int>().swap(vuvi);
-
-
-	fl.clear();
-	fl.close();
-	ss.clear();
-
-}
-
-
-bool FindFace(string &str, int &j, int &k, int &l) {
-
-	int charNum = str.length();
-	int begin = 0;
-	int end = 0;
-	string a;
-	string b;
-	string c;
-
-	for (int i = 0; i < charNum; i++) {
-		if ((int)str[i] == 47) {
-			begin = i;
-			break;
-		}
-	}
-
-	for (int i = begin + 1; i < charNum; i++) {
-		if ((int)str[i] == 47) {
-			end = i;
-			break;
-		}
-	}
-
-	if (begin == 0 && end == 0) {
-		return false;
-	}
-
-	a = str.substr(0, begin - 0);
-
-	if ((end - begin) != 1) {
-		b = str.substr(begin + 1, end - begin - 1);
-		k = atoi(b.c_str()) - 1;
-	}
-	else
-		k = 0;
-
-	c = str.substr(end + 1, charNum - end - 1);
-	j = atoi(a.c_str()) - 1;
-	l = atoi(c.c_str()) - 1;
-
-	return true;
-}
-
-// vertex position line-interpolation
-void VertexLineInterp(Vertex *v1, Vertex *v2, float t, Vertex *vt) {
-	vt->p.x = (1 - t)*v2->p.x + t*v2->p.x;
-	vt->p.y = (1 - t)*v2->p.y + t*v2->p.y;
-	vt->p.z = (1 - t)*v2->p.z + t*v2->p.z;
-}
 
 
 //barycentric coordinates in triangle;
@@ -248,16 +15,293 @@ float MidPointDistance(float x, float y, const Point &p0, const Point &p1) {
 }
 
 
-Point Tri3DBarycentric(const Point &p, const Triangle &tri) {
-	Vector na = Cross((tri.vc.p - tri.vb.p), (p - tri.vb.p));
-	Vector nb = Cross((tri.va.p - tri.vc.p), (p - tri.vc.p));
-	Vector nc = Cross((tri.vb.p - tri.va.p), (p - tri.va.p));
 
-	Vector n = Cross((tri.vb.p - tri.va.p), (tri.vc.p - tri.va.p));
+void RayTriangleMesh::SetBoundBox()
+{
+	if (verNum <= 0) return;
+	bbox.minPoint = p[0];
+	bbox.maxPoint = p[0];
 
-	float a = Dot(n, na) / n.LengthSquared();
-	float b = Dot(n, nb) / n.LengthSquared();
-	float c = Dot(n, nc) / n.LengthSquared();
+	for (int i = 0; i < verNum; i++)
+	{
 
-	return Point(a, b, c);
+		bbox.minPoint.x = min(bbox.minPoint.x, p[i].x);
+		bbox.minPoint.y = min(bbox.minPoint.y, p[i].y);
+		bbox.minPoint.z = min(bbox.minPoint.z, p[i].z);
+		bbox.maxPoint.x = max(bbox.maxPoint.x, p[i].x);
+		bbox.maxPoint.y = max(bbox.maxPoint.y, p[i].y);
+		bbox.maxPoint.z = max(bbox.maxPoint.z, p[i].z);
+	}
+}
+
+bool RayTriangleMesh::Intersection(Ray & ray, float * tHit, float *tHitError, Info &infro)
+{	
+
+	float t = 0.f;
+	float terror = 0.f;
+
+	// if ray  not hit boundbox 
+	if (!bbox.intersection(ray))	return false;
+
+	for (int i = 0; i < triNum; i++)
+	{	
+		if (Dot(-ray.d, n[ni[3 * i]] + n[ni[3 * i + 1]] + n[ni[3 * i + 2]]) < 0)
+			continue;
+
+		Triangle tri;
+		tri.p1 = p[vi[3 * i]]; tri.p2 = p[vi[3 * i + 1]]; tri.p3 = p[vi[3 * i + 2]];
+		tri.faceID = i;
+
+		if (!tri.Intersection(ray, &ray.t, &ray.tError, infro))
+		{
+			continue;
+		}
+
+		else
+		{
+			if (ray.t != 0.f && infro.faceID != -1)
+			{
+				{
+					Point& p1 = p[vi[3 * infro.faceID]]; Point& p2 = p[vi[3 * infro.faceID + 1]]; Point& p3 = p[vi[3 * infro.faceID + 2]];
+					Vector e1 = p2 - p1;
+					Vector e2 = p3 - p1;
+					Vector s1 = Cross(ray.d, e2);
+					float divisor = Dot(s1, e1);
+					float invDivisor = 1.f / divisor;
+
+					//b1
+					Vector d = ray.o - p1;
+					float b1 = Dot(d, s1) * invDivisor;
+
+					//b2
+					Vector s2 = Cross(d, e1);
+					float b2 = Dot(ray.d, s2) * invDivisor;
+
+					infro.p = ray.o + ray.t*ray.d;
+					infro.b1 = b1;
+					infro.b2 = b2;
+					infro.b3 = 1 - b1 - b2;
+				}
+
+
+				int faceID = infro.faceID;
+
+				//infro.p = infro.b1*p[vi[faceID * 3]] + infro.b2*p[vi[faceID * 3 + 1]] + infro.b3*p[vi[faceID * 3 + 2]];
+				infro.p =ray.o+ray.t*ray.d ;
+				infro.n = Normalize(n[ni[faceID * 3]] + n[ni[faceID * 3 + 1]] + n[ni[faceID * 3 + 2]]);
+				infro.uv = infro.b1*uv[uvi[faceID * 3]] + infro.b2*uv[ni[faceID * 3 + 1]] + infro.b3*uv[uvi[faceID * 3 + 2]];
+				infro.tangent = Normalize(p[vi[faceID * 3 + 1]] - p[vi[faceID * 3]]);
+
+				infro.mtl = mtl[mtli[faceID]];
+
+
+				return true;
+			}
+
+			else
+			{
+				return false;
+			}
+		}
+		
+	}
+
+
+	
+}
+
+void RayTriangleMesh::LoadDxUnity(Unity & unity, BasicManager &basicMng)
+{	
+
+	if (unity.objId < 0)
+	{
+		triNum = 0;
+		return;
+	}
+
+	DxObj* obj = basicMng.objManager.DxObjMem[unity.objId];
+
+	triNum = obj->faceNum;
+	verNum = obj->vertexNum;
+	nNum = obj->vertexNum;
+	uvNum = obj->vertexNum;
+
+	p = new Point[verNum];
+	n = new Normal[nNum];
+	uv = new Point[uvNum];
+
+	for (int i = 0; i < verNum;i++)
+	{	
+		p[i] = Point(obj->vData[i].Pos.x,
+			obj->vData[i].Pos.y,
+			obj->vData[i].Pos.z);
+		n[i] = Normal(obj->vData[i].Normal.x,
+			obj->vData[i].Normal.y,
+			obj->vData[i].Normal.z);
+		uv[i] = Point(obj->vData[i].Tex.x,
+			obj->vData[i].Tex.y,
+			0.f);
+	}
+
+	vi = new int[triNum * 3];
+	ni = new int[triNum * 3];
+	uvi = new int[triNum * 3];
+	for (int i = 0; i < 3*triNum; i++)
+	{
+		vi[i] = obj->indices[i];
+		ni[i] = obj->indices[i];
+		uvi[i] = obj->indices[i];
+	}
+
+	int beginMTLID = unity.MaterialsIdIndex[0];
+	mtlNum = unity.materialNum;
+	mtl = new DxMaterials[mtlNum];
+
+	for (int i = 0; i < mtlNum; i++)
+	{
+		mtl[i] = basicMng.materialsManager.dxMaterial[beginMTLID + i];
+	}
+
+	mtli = new int[triNum];
+
+	for(int i = 0; i < triNum; i++)
+	{
+		mtli[i] = obj->faceMaterialIndices[i];
+	}
+	
+	SetBoundBox();
+}
+
+void RayTriangleMesh::ViewTransform(Transform & View)
+{	
+	if (triNum < 0)	return;
+	for (int i = 0; i < verNum; i++)
+	{
+		p[i] = View(p[i]);
+		n[i] = View(n[i]);
+	}
+}
+
+void Triangle::SetBoundBox()
+{
+	bbox.minPoint = p1;
+	bbox.maxPoint = p1;
+	bbox = Union(bbox, p2);
+	bbox = Union(bbox, p3);
+}
+
+bool Triangle::Intersection(Ray & ray, float * tHit, float *tHitError, Info &infro)
+{
+	// compute s1
+	Vector e1 = p2 - p1;
+	Vector e2 = p3 - p1;
+	Vector s1 = Cross(ray.d, e2);
+	float divisor = Dot(s1, e1);
+	if (divisor == 0.)
+		return false;
+	float invDivisor = 1.f / divisor;
+
+	//compute three barycentric coordinate
+	//b1
+	Vector d = ray.o - p1;
+	float b1 = Dot(d, s1) * invDivisor;
+	if (b1 < 0.f || b1 > 1.f)
+		return false;
+	//b2
+	Vector s2 = Cross(d, e1);
+	float b2 = Dot(ray.d, s2) * invDivisor;
+	if (b2 < 0.f || b1 + b2 > 1.f)
+		return false;
+
+	//compute t for intersection point
+	float t = Dot(e2, s2) * invDivisor;
+	if (t < ray.t0 || t > ray.t1)
+		return false;
+
+	//output t and t-error
+	if (*tHit > t)
+	{
+		infro.faceID = faceID;
+		*tHit = t;
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool RaySphere::Intersection(Ray & ray, float * tHit, float * tHitError, Info & infro)
+{	
+
+	float t0 = 0.f; float t1 = 0.f;
+
+	Vector R2SO = p - ray.o;
+	float R2SF = Dot(R2SO, ray.d);
+
+	if (R2SF < 0)	return false;
+
+	float d = sqrt(Dot(R2SO, R2SO) - R2SF*R2SF);
+
+	if (d > radius)	return false;
+
+	float dis = sqrt(radius*radius - d*d);
+
+	if (dis <= 0.001)
+	{
+		t0 = t1 = R2SF;
+	}
+	else
+	{
+		t0 = R2SF - dis;
+		t1 = R2SF + dis;
+	}
+
+	if (t0 < ray.t)
+	{
+		infro.faceID = 0;
+		ray.t = t0;
+		infro.p = ray.o + ray.d*ray.t ;
+		infro.n = Normalize(infro.p - p);
+		infro.mtl = mtl;
+		infro.tangent = Normalize(Cross(infro.n, -ray.d));
+		*tHit = t0;
+		//*tHitError = *tHit*0.001;
+ 		return true;
+	}
+	else
+	{
+		return false;
+	}
+		
+
+}
+
+void RaySphere::LoadDxUnity(Unity & unity, BasicManager & basicMng)
+{
+	if (unity.objId < 0)
+	{
+		radius = 0.f;
+		return;
+	}
+
+	DxObj* obj = basicMng.objManager.DxObjMem[unity.objId];
+
+	float inv = 1.f / obj->vertexNum;
+
+	for (int i = 0; i < obj->vertexNum; i++)
+	{
+		p = p + Point(obj->vData[i].Pos.x,
+			obj->vData[i].Pos.y,
+			obj->vData[i].Pos.z)*inv;
+	}
+
+	radius = (Point(obj->vData[0].Pos.x, obj->vData[0].Pos.y, obj->vData[0].Pos.z) - p).Length();
+
+	mtl = basicMng.materialsManager.dxMaterial[unity.MaterialsIdIndex[0]];
+}
+
+void RaySphere::ViewTransform(Transform & View)
+{
+	p = View(p);
 }

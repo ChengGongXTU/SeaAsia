@@ -89,6 +89,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -160,7 +161,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="basicmanager.h" />
-    <ClInclude Include="camera.h" />
+    <ClInclude Include="BoundBox.h" />
     <ClInclude Include="cameramanager.h" />
     <ClInclude Include="dxcamera.h" />
     <ClInclude Include="dxdevice.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="imgui.h" />
     <ClInclude Include="imgui_impl_dx11.h" />
     <ClInclude Include="imgui_internal.h" />
+    <ClInclude Include="information.h" />
     <ClInclude Include="lightmanager.h" />
     <ClInclude Include="lowlevelrendermanager.h" />
     <ClInclude Include="mainwindowui.h" />
@@ -179,7 +181,12 @@
     <ClInclude Include="objmanager.h" />
     <ClInclude Include="primitivemanager.h" />
     <ClInclude Include="rand.h" />
-    <ClInclude Include="resource.h" />
+    <ClInclude Include="ray.h" />
+    <ClInclude Include="RayLight.h" />
+    <ClInclude Include="RayScene.h" />
+    <ClInclude Include="RayTraceAlgorithm.h" />
+    <ClInclude Include="RayTraceManager.h" />
+    <ClInclude Include="RGB.h" />
     <ClInclude Include="scenenmanager.h" />
     <ClInclude Include="SeeAisa.h" />
     <ClInclude Include="shadermanager.h" />
@@ -187,7 +194,6 @@
     <ClInclude Include="stb_rect_pack.h" />
     <ClInclude Include="stb_textedit.h" />
     <ClInclude Include="stb_truetype.h" />
-    <ClInclude Include="texture.h" />
     <ClInclude Include="texturemanager.h" />
     <ClInclude Include="transform.h" />
     <ClInclude Include="dxlight.h" />
@@ -196,7 +202,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="basicmanager.cpp" />
-    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="BoundBox.cpp" />
     <ClCompile Include="cameramanager.cpp" />
     <ClCompile Include="dxcamera.cpp" />
     <ClCompile Include="dxdevice.cpp" />
@@ -206,6 +212,7 @@
     <ClCompile Include="imgui_demo.cpp" />
     <ClCompile Include="imgui_draw.cpp" />
     <ClCompile Include="imgui_impl_dx11.cpp" />
+    <ClCompile Include="information.cpp" />
     <ClCompile Include="lightmanager.cpp" />
     <ClCompile Include="lowlevelrendermanager.cpp" />
     <ClCompile Include="main.cpp" />
@@ -213,10 +220,13 @@
     <ClCompile Include="materialsmanager.cpp" />
     <ClCompile Include="objmanager.cpp" />
     <ClCompile Include="primitivemanager.cpp" />
+    <ClCompile Include="RayLight.cpp" />
+    <ClCompile Include="RayScene.cpp" />
+    <ClCompile Include="RayTraceAlgorithm.cpp" />
+    <ClCompile Include="RayTraceManager.cpp" />
     <ClCompile Include="scenemanager.cpp" />
     <ClCompile Include="shadermanager.cpp" />
     <ClCompile Include="shape.cpp" />
-    <ClCompile Include="texture.cpp" />
     <ClCompile Include="texturemanager.cpp" />
     <ClCompile Include="transform.cpp" />
     <ClCompile Include="wcharandwstring.cpp" />
@@ -224,6 +234,9 @@
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="hlsl.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -218,6 +218,49 @@
 //
 //}
 
+bool FindFace(string &str, int &j, int &k, int &l) {
+
+	int charNum = str.length();
+	int begin = 0;
+	int end = 0;
+	string a;
+	string b;
+	string c;
+
+	for (int i = 0; i < charNum; i++) {
+		if ((int)str[i] == 47) {
+			begin = i;
+			break;
+		}
+	}
+
+	for (int i = begin + 1; i < charNum; i++) {
+		if ((int)str[i] == 47) {
+			end = i;
+			break;
+		}
+	}
+
+	if (begin == 0 && end == 0) {
+		return false;
+	}
+
+	a = str.substr(0, begin - 0);
+
+	if ((end - begin) != 1) {
+		b = str.substr(begin + 1, end - begin - 1);
+		k = atoi(b.c_str()) - 1;
+	}
+	else
+		k = 0;
+
+	c = str.substr(end + 1, charNum - end - 1);
+	j = atoi(a.c_str()) - 1;
+	l = atoi(c.c_str()) - 1;
+
+	return true;
+}
+
 void DxTriangleMesh::LoadOBJ(wstring fileName)
 {
 	ifstream fl(fileName);
@@ -307,7 +350,7 @@ void DxTriangleMesh::LoadOBJ(wstring fileName)
 		if ((int)word[0] == 102 && (int)word[1] == NULL) {
 			triNum++;
 			faceNumb++;
-			mtli.push_back(currMtlId);
+			mtli.push_back(currMtlId-1);
 			ss >> as >> bs >> cs;
 			FindFace(as, j, k, l);
 			vtri.push_back(j);
@@ -470,4 +513,23 @@ void DxTriangleMesh::LoadOBJ(wstring fileName)
 	fl.clear();
 	fl.close();
 	ss.clear();
+}
+
+void DxTriangleMesh::SetBoundBox()
+{	
+	if (vertexNum <= 0) return;
+	bbox.minPoint = Point(vData[0].Pos.x, vData[0].Pos.y, vData[0].Pos.z);
+	bbox.maxPoint = Point(vData[0].Pos.x, vData[0].Pos.y, vData[0].Pos.z);
+
+	for (int i = 0; i < vertexNum; i++)
+	{
+		XMFLOAT3 &p = vData[i].Pos;
+
+		bbox.minPoint.x = min(bbox.minPoint.x, p.x);
+		bbox.minPoint.y = min(bbox.minPoint.y, p.y);
+		bbox.minPoint.z = min(bbox.minPoint.z, p.z);
+		bbox.maxPoint.x = max(bbox.maxPoint.x, p.x);
+		bbox.maxPoint.y = max(bbox.maxPoint.y, p.y);
+		bbox.maxPoint.z = max(bbox.maxPoint.z, p.z);
+	}
 }

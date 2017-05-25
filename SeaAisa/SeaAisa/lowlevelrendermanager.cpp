@@ -275,7 +275,8 @@ void LowLevelRendermanager::RenderMaterialChange(BasicManager & basicMng, int ma
 }
 
 
-bool LowLevelRendermanager::LoadUnityFromObjFile(wstring objName, wstring mtlName, wstring textureName, DxScene &scene, BasicManager &basicMng)
+bool LowLevelRendermanager::LoadUnityFromObjFile(wstring objName, wstring mtlName, wstring textureName, DxScene &scene,
+	BasicManager &basicMng, ObjectType type)
 {
 	//load mesh 
 	if (!basicMng.objManager.LoadTriangelMeshObj(objName)) return false;
@@ -305,7 +306,11 @@ bool LowLevelRendermanager::LoadUnityFromObjFile(wstring objName, wstring mtlNam
 		scene.unityList[scene.endUnityId].samplerStateId = basicMng.textureManager.endSamplerStateId;
 		basicMng.textureManager.endSamplerStateId++;
 	}
+
+	//set type
+	scene.unityList[scene.endUnityId].type = type;
 	
 	scene.currentUnityId = scene.endUnityId;
 	scene.endUnityId++;
+	
 }

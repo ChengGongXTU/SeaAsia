@@ -48,9 +48,15 @@
 #define M_PI 3.1415926
 #define Rel(x) {if(x){x->Release();x=0;}}
 using namespace std;
+
+static std::default_random_engine generator(time(NULL));
+static std::uniform_real_distribution<double> dis(0.0, 1.0);
+
 using std::swap;
 using std::min;
 using std::max;
+
+
 
 // Basic module
 class BasicManager;
@@ -66,6 +72,7 @@ class FrontManager;
 class BoneManager;
 class ImpactManager;
 class PhysicsParameterManager;
+class RayTraceManager;
 
 //Software-LowLevel-RenderModule
 //Basic Mesh
@@ -80,9 +87,7 @@ class Camera;
 //Texture
 class Texture;
 //shape
-class Triangle;
-class TriangleMseh;
-
+class Shape;
 
 
 //D3D-lowlevel-RenderModule
@@ -93,6 +98,20 @@ class DxLight;
 class DxScene;
 class DxMaterials;
 class Unity;
+
+//Ray Trace 
+class Ray;
+class BoundBox;
+class RayLight;
+class RayPointLight;
+class RayDirLight;
+class RayUnity;
+class RayScene;
+class ColorRGB;
+class RayTraceAlgorithm;
+class GlobalIllumination;
+
+
 
 //extra math
 inline float Radians(float deg) {

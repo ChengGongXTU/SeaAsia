@@ -25,6 +25,12 @@
     <Filter Include="头文件\UI">
       <UniqueIdentifier>{9ec5977e-2e2b-4884-abf8-bfeb9784b324}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\RayTrace">
+      <UniqueIdentifier>{e89fdf0d-74f4-41cd-aaf6-f639b9590908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RayTrace">
+      <UniqueIdentifier>{3f94b93e-bbc4-4385-8fa1-07360a552542}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SeeAisa.h">
@@ -33,16 +39,10 @@
     <ClInclude Include="rand.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="texture.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="geometry.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="transform.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="objmanager.h">
@@ -75,9 +75,6 @@
     <ClInclude Include="windowsDevice.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="shape.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="materialsmanager.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -95,9 +92,6 @@
     </ClInclude>
     <ClInclude Include="cameramanager.h">
       <Filter>头文件\Lowlevelrender</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="lowlevelrendermanager.h">
       <Filter>头文件\Lowlevelrender</Filter>
@@ -129,18 +123,39 @@
     <ClInclude Include="wcharandwstring.h">
       <Filter>头文件\UI</Filter>
     </ClInclude>
+    <ClInclude Include="RayTraceManager.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTraceAlgorithm.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="shape.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RayLight.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RayScene.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundBox.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="information.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RGB.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="ray.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="texture.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="transform.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="camera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="dxdevice.cpp">
@@ -168,9 +183,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="dxobj.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="shape.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="materialsmanager.cpp">
@@ -209,10 +221,34 @@
     <ClCompile Include="wcharandwstring.cpp">
       <Filter>源文件\UI</Filter>
     </ClCompile>
+    <ClCompile Include="shape.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTraceManager.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTraceAlgorithm.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="information.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundBox.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="RayLight.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="RayScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="hlsl.fx">
       <Filter>源文件</Filter>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

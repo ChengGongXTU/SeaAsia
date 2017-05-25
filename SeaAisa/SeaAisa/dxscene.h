@@ -4,10 +4,16 @@
 #include"dxcamera.h"
 #include"dxlight.h"
 
+enum ObjectType
+{
+	TriangleType,SphereType
+};
 
 class Unity {
 
 public:
+
+	ObjectType type;
 
 	XMFLOAT3 Pos;
 	XMMATRIX transform;

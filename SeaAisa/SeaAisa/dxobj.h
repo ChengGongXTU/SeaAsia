@@ -1,6 +1,8 @@
 #pragma once
 #include"SeeAisa.h"
-#include"shape.h"
+//#include"shape.h"
+//#include"ray.h"
+#include"BoundBox.h"
 
 struct vertexData {
 	XMFLOAT3 Pos;
@@ -14,6 +16,8 @@ class DxObj {
 public:
 
 	int objId;
+
+	BoundBox bbox;
 
 	//vertex number
 	int vertexNum;
@@ -44,6 +48,8 @@ public:
 	/*virtual void LoadOBJTotal(wstring fileName) = 0;*/
 
 	virtual void exchange() = 0;
+	virtual void SetBoundBox() = 0;
+	/*virtual bool Intersection(const Ray &ray, float *tHit, float tHitError) = 0;*/
 };
 
 class DxTriangleMesh :public DxObj {
@@ -54,4 +60,19 @@ public:
 	/*void LoadOBJTotal(wstring fileName);*/
 	void exchange() {};
 	void Draw() {};
+	void SetBoundBox();
+	bool CanIntersection() { return true; };
+	/*bool Intersection(const Ray &ray, float *tHit, float tHitError) { return true; };*/
+};
+
+class Sphere :public DxObj
+{
+public:
+	void LoadX(string fileName) {};
+	void LoadOBJ(wstring fileName) {};
+	void exchange() {};
+	void Draw() {};
+	void SetBoundBox() {};
+	/*bool Intersection(const Ray &ray, float *tHit, float tHitError) {};*/
+
 };

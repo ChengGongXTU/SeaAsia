@@ -11,7 +11,7 @@ static bool show_render_setting_view = true;
 static bool show_camera_change_view = false;
 static bool show_materila_change_view = false;
 
-void MainWindowUI(WindowsDevice & winDev,BasicManager &basicMng, LowLevelRendermanager &renderMng, bool *p_open)
+void MainWindowUI(WindowsDevice & winDev,BasicManager &basicMng, LowLevelRendermanager &renderMng, RayTraceManager& rayMng,bool *p_open)
 {	
 
 	if (show_scene_resource_view)	ScenenResourceView(winDev,basicMng,renderMng,&show_scene_resource_view);
@@ -99,7 +99,17 @@ void MainWindowUI(WindowsDevice & winDev,BasicManager &basicMng, LowLevelRenderm
 		}
 
 		//ray trace render
-		if (ImGui::BeginMenu("Ray Trace Render ")) { ImGui::EndMenu(); }
+		if (ImGui::BeginMenu("Ray Trace Render "))
+		{	
+			if (ImGui::Button("Begin Global Illumination Render"))
+			{
+				float dsadas;
+				rayMng.SetRayTrace(0);
+				rayMng.SceneLoad(basicMng.sceneManager.sceneList[basicMng.sceneManager.currentSceneId], basicMng);
+				rayMng.Render(dsadas);
+			}
+			ImGui::EndMenu(); 
+		}
 
 		ImGui::EndMainMenuBar();
 	}
@@ -550,6 +560,9 @@ static void UnityLoadingView(BasicManager &basicMng, LowLevelRendermanager &rend
 		mtlName = CharToWstring(str2);
 		ImGui::InputText("Input Texture File Name", str3, 128);
 		textureName = CharToWstring(str3);
+
+		static int objType = 0;
+		ImGui::Combo("Object type", &objType, "Triangle\0Sphere\0\0");
 		
 		if (ImGui::BeginPopupModal("obj error"))
 		{
@@ -574,8 +587,12 @@ static void UnityLoadingView(BasicManager &basicMng, LowLevelRendermanager &rend
 
 		if (ImGui::Button("OK", ImVec2(-1, 20)))
 		{
+			ObjectType otype = TriangleType;
+			if (objType == 0)	otype = TriangleType;
+			if (objType == 1)	otype = SphereType;
+
 			if (renderMng.LoadUnityFromObjFile(objName, mtlName, textureName,
-				basicMng.sceneManager.sceneList[basicMng.sceneManager.currentSceneId], basicMng))
+				basicMng.sceneManager.sceneList[basicMng.sceneManager.currentSceneId], basicMng,otype))
 			{	
 				basicMng.textureManager.DxSetSamplerDesc(D3D11_FILTER_MIN_MAG_MIP_LINEAR, D3D11_TEXTURE_ADDRESS_WRAP, D3D11_TEXTURE_ADDRESS_WRAP, D3D11_TEXTURE_ADDRESS_WRAP,
 					D3D11_COMPARISON_NEVER, 0, D3D11_FLOAT32_MAX, NULL, NULL);
