@@ -1,14 +1,21 @@
 SeaAsia 西娅西娅 - DX11+CPU RAY TRACE+ImGui Render.
 ====
 This is a simple render lab for real-time and offline render. The user can check and operate much of parameters of render-object in UI, 
-achieve real-time render result in windows. The ray trace function is coming soon.... 
+achieve real-time render result in windows, and render any scene by ray trace function.  
+
+Update:  
+---------  
+* 2017.5.25:  
+	I add a ray trace function, witch include Diffuse BRDF, path trace and global illumination function.  
+	![](https://raw.githubusercontent.com/ChengGongXTU/SeaAsia/master/Ray%20Trace%20render%20result.bmp)
 
 1.Function
 ----------
 * Transparency: much of paramaters can be see and change in UI, each operator will effects the real-time render result.
 * Shader Edit: you can change and input diffrent shader codes repeatedly, and watch th render result in window.
+* Ray Trace: render a scene by Ray Trace function.
 * The future function:  
-	* Interaction between ray trace and real time scene.  
+	* More Ray Trace function.  
 	* Some Non photorealistic rendering function.  
 	* and so on ...
   
@@ -47,6 +54,8 @@ achieve real-time render result in windows. The ray trace function is coming soo
 		* 3.Create Camera and Light constant.  
 		And the render result will show in windows.  
 	![](https://github.com/ChengGongXTU/SeaAsia/blob/master/2.jpg)  
+	
+	* More, you can use ray trace buttom to render current scene (make sure that "Ke" is not zeor in light-source object ).
 	  
 4.More suggestion：  
 -------------------  
