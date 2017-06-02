@@ -260,7 +260,7 @@ void LowLevelRendermanager::ReverseUnityNormalZaxis(BasicManager & basicMng, Uni
 	HRESULT hr = basicMng.dxDevice.device->CreateBuffer(&primitiveManager.bd, &primitiveManager.data, &primitiveManager.vertexBuffer);
 }
 
-void LowLevelRendermanager::RenderMaterialChange(BasicManager & basicMng, int materialID, MaterialParameter & para)
+void LowLevelRendermanager::RenderMaterialChange(BasicManager & basicMng, int materialID, MaterialParameter & para,int type)
 {	
 	MaterialParameter& currentPara = basicMng.materialsManager.dxMaterial[materialID].parameter;
 	currentPara.Ka = para.Ka;
@@ -272,6 +272,9 @@ void LowLevelRendermanager::RenderMaterialChange(BasicManager & basicMng, int ma
 	currentPara.Ns = para.Ns;
 	currentPara.Ni = para.Ni;
 
+	if (type == 0)	basicMng.materialsManager.dxMaterial[materialID].mtlType == matte;
+	if (type == 1)	basicMng.materialsManager.dxMaterial[materialID].mtlType == phong;
+	if (type == 2)	basicMng.materialsManager.dxMaterial[materialID].mtlType == emissive;
 }
 
 
@@ -294,9 +297,15 @@ bool LowLevelRendermanager::LoadUnityFromObjFile(wstring objName, wstring mtlNam
 	scene.unityList[scene.endUnityId].materialNum = basicMng.materialsManager.endMtlId - current1MtlId;
 	if (scene.unityList[scene.endUnityId].materialNum == 0) return false;
 	scene.unityList[scene.endUnityId].MaterialsIdIndex = new int[scene.unityList[scene.endUnityId].materialNum];
-	for (int i = 0; i < scene.unityList[scene.endUnityId].materialNum; i++) {
+	for (int i = 0; i < scene.unityList[scene.endUnityId].materialNum; i++) 
+	{
 		scene.unityList[scene.endUnityId].MaterialsIdIndex[i] = current1MtlId + i;
+
+		if (type == EmissiveType)
+			basicMng.materialsManager.dxMaterial[scene.unityList[scene.endUnityId].MaterialsIdIndex[i]].mtlType = emissive;
+
 	}
+
 
 	//load texture, no set samplerstate!
 	if (!basicMng.textureManager.DxLoadTexture(textureName, basicMng.dxDevice))	return false;

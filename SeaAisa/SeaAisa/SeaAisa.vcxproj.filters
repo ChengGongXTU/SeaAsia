@@ -150,6 +150,15 @@
     <ClInclude Include="ray.h">
       <Filter>头文件\RayTrace</Filter>
     </ClInclude>
+    <ClInclude Include="sample.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDF.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RayMaterial.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -240,6 +249,15 @@
       <Filter>头文件\RayTrace</Filter>
     </ClCompile>
     <ClCompile Include="RayScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sample.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RayMaterial.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

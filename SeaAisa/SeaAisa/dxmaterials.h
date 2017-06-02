@@ -4,7 +4,7 @@
 
 enum MaterialType
 {
-	mtlDiffuse
+	matte,phong,emissive
 };
 
 struct MaterialParameter {
@@ -32,7 +32,7 @@ public:
 		parameter.alpha = 1.f;
 		parameter.Ni = 0.f;
 		parameter.Ns = 0;
-		mtlType = mtlDiffuse;
+		mtlType = matte;
 	}
 	
 

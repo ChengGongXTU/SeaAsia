@@ -46,11 +46,13 @@
 
 //Macros
 #define M_PI 3.1415926
+#define Inv_M_PI 0.318301
+#define E 2.718281828459
 #define Rel(x) {if(x){x->Release();x=0;}}
 using namespace std;
 
 static std::default_random_engine generator(time(NULL));
-static std::uniform_real_distribution<double> dis(0.0, 1.0);
+static std::uniform_real_distribution<float> dis(0.0, 1.0);
 
 using std::swap;
 using std::min;
@@ -110,6 +112,7 @@ class RayScene;
 class ColorRGB;
 class RayTraceAlgorithm;
 class GlobalIllumination;
+class RayMaterial;
 
 
 

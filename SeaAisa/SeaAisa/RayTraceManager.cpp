@@ -3,7 +3,7 @@
 void RayTraceManager::SetRayTrace(int choos)
 {
 	if (choos == 0)
-		RayTrace = new GlobalIllumination[1];
+		RayTrace = new DirectLight[1];
 }
 
 void RayTraceManager::SceneLoad(DxScene & dxscene, BasicManager &basicMng)
@@ -38,15 +38,25 @@ void RayTraceManager::SceneLoad(DxScene & dxscene, BasicManager &basicMng)
 		dxcamera.mView._14, dxcamera.mView._24, dxcamera.mView._34, dxcamera.mView._44);
 
 	scene.unityList = new RayUnity[scene.unityNum];
+	scene.lightNum += dxscene.endDlId + dxscene.endPlId;
+	int arealightnum = 0;
+	vector<int> areaID;
 	for (int i = 0; i < scene.unityNum; i++)
-	{	
+	{
+		if (dxscene.unityList[i].type == EmissiveType)
+		{
+			areaID.push_back(i);
+			arealightnum++;
+		}
 		scene.unityList[i].CreateDxUnity(dxscene.unityList[i]);
 		scene.unityList[i].shape->LoadDxUnity(dxscene.unityList[i], basicMng);
 		scene.unityList[i].shape->ViewTransform(scene.camera.worldToEye);
 
 	}
 
-	scene.lightNum = dxscene.endDlId + dxscene.endPlId;
+	scene.lightNum += arealightnum;
+
+	
 	scene.lightList = new RayLight*[scene.lightNum];
 	for (int i = 0; i < dxscene.endDlId; i++)
 	{	
@@ -59,7 +69,7 @@ void RayTraceManager::SceneLoad(DxScene & dxscene, BasicManager &basicMng)
 		scene.lightList[i] = ptr;		
 	}
 
-	for (int i = dxscene.endDlId; i < scene.lightNum; i++)
+	for (int i = dxscene.endDlId; i < dxscene.endDlId+dxscene.endPlId; i++)
 	{
 		RayPointLight* ptr;
 		ptr = new RayPointLight[1];
@@ -67,10 +77,30 @@ void RayTraceManager::SceneLoad(DxScene & dxscene, BasicManager &basicMng)
 		ptr->color[0] = dxscene.plList[i].Color.x;
 		ptr->color[1] = dxscene.plList[i].Color.y;
 		ptr->color[2] = dxscene.plList[i].Color.z;
+		scene.lightList[i] = ptr;
 	}
 
+	for (int i = dxscene.endDlId + dxscene.endPlId; i < scene.lightNum; i++)
+	{
+		AreaLight* ptr;
+		ptr = new AreaLight[1];
 
+		int j = i - dxscene.endDlId + dxscene.endPlId;
+		ptr->obj = scene.unityList[areaID[j]].shape;
+		ptr->mtl = new Emissive[1];
+		ptr->mtl->LoadMaterial(basicMng.materialsManager.dxMaterial[dxscene.unityList[areaID[j]].MaterialsIdIndex[0]]);
+		ptr->obj->samplePTR = new Jittere(totalSampleNum);
+		ptr->obj->samplePTR->SetupShuffledIndices();
+		ptr->obj->samplePTR->MapSquareToHemisphere(1);
+		scene.lightList[i] = ptr;
+		
+	}
+	areaID.clear();
+	vector<int>().swap(areaID);
+
+	RayTrace->info.scene = &scene;
 }
+
 
 void RayTraceManager::Render(float &pace)
 {
@@ -78,16 +108,17 @@ void RayTraceManager::Render(float &pace)
 
 	Camera &camera = scene.camera;
 
-	int w = 320;
-	int h = 180;
+	int w = 640;
+	int h = 360;
 	int pixelNumber = w*h;
 
 	//create a memory to store render result:
 	ColorRGB* image = new ColorRGB[pixelNumber];
 
 	//super sample bias for ray
-	int sampleNum = 40;
-	int subNum = 2;
+	int sampleNum = totalSampleNum;;
+	SetSceneSample(sampleNum);
+	int& subNum = scene.sampleNum;
 
 	float dx = (camera.oRight - camera.oLeft) / w;
 	float dy = (camera.oTop - camera.oBottom) / h;
@@ -95,7 +126,6 @@ void RayTraceManager::Render(float &pace)
 	float subdy = dy / subNum;
 
 	float inv = 1.f / sampleNum;
-	float subInv = 1.f / (2*subNum);
 
 	//in each pixel frag
 	//create sample ray
@@ -111,33 +141,28 @@ void RayTraceManager::Render(float &pace)
 			ColorRGB color;
 
 			//in subpixel
-			for (int sy = 0; sy < subNum; sy++)
-			{ 
-				for (int sx = 0; sx < subNum; sx++)
-				{
+			for (int k = 0; k < sampleNum; k++)
+			{
+				Point p = scene.samplePTR->GetSquareSample();
+				float ex = camera.oLeft + dx*x + dx*p.x;
+				float ey = camera.oBottom + dy*y + dy*p.y;
+				//float ex = camera.oLeft + dx*x + subdx*(sx + 0.5);
+				//float ey = camera.oBottom + dy*y + subdy*(sy + 0.5);
+				float ez = camera.oNear;
+				Point e = Point(ex, ey, ez);
+				Vector d = Normalize(e - Point(0.f, 0.f, 0.f));
 
-					float ex = camera.oLeft + dx*x + subdx*(sx + dis(generator));
-					float ey = camera.oBottom + dy*y + subdy*(sy + dis(generator));
-					//float ex = camera.oLeft + dx*x + subdx*(sx + 0.5);
-					//float ey = camera.oBottom + dy*y + subdy*(sy + 0.5);
-					float ez = camera.oNear;
-					Point e = Point(ex, ey, ez);
-					Vector d = Normalize(e - Point(0.f, 0.f, 0.f));
+				//create a ray
+				Ray r = Ray(e, d, 0, INFINITY, INFINITY);
+				r.tError = 0.001;
+				r.depth = 0;
 
-					//create a ray
-					Ray r = Ray(e, d, 0, INFINITY, INFINITY);
-					r.tError = 0.001;
-					r.depth = 0;
+				//sample the color sampleNum times for each subpixel
 
-					//sample the color sampleNum times for each subpixel
-					for (int k = 0; k < sampleNum; k++)
-					{
-						color += RayTrace->compute(r)*inv;
-					}
-				}
-					
+				color += RayTrace->compute(r)*inv;
 			}
-			image[pixelNum] += color*subInv;
+
+			image[pixelNum] += color;
 			
 		}
 	}
@@ -165,4 +190,10 @@ void RayTraceManager::Render(float &pace)
 	fclose(fp);
 
 	delete image;
+}
+
+void RayTraceManager::SetSceneSample(int n)
+{
+	scene.SetSamples(n);
+	scene.samplePTR->SetupShuffledIndices();
 }

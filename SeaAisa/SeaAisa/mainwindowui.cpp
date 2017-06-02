@@ -562,7 +562,7 @@ static void UnityLoadingView(BasicManager &basicMng, LowLevelRendermanager &rend
 		textureName = CharToWstring(str3);
 
 		static int objType = 0;
-		ImGui::Combo("Object type", &objType, "Triangle\0Sphere\0\0");
+		ImGui::Combo("Object type", &objType, "Triangle\0Sphere\0RectangleType\0EmissiveType\0\0");
 		
 		if (ImGui::BeginPopupModal("obj error"))
 		{
@@ -590,6 +590,8 @@ static void UnityLoadingView(BasicManager &basicMng, LowLevelRendermanager &rend
 			ObjectType otype = TriangleType;
 			if (objType == 0)	otype = TriangleType;
 			if (objType == 1)	otype = SphereType;
+			if (objType == 2)	otype = RectangleType;
+			if (objType == 3)	otype = EmissiveType;
 
 			if (renderMng.LoadUnityFromObjFile(objName, mtlName, textureName,
 				basicMng.sceneManager.sceneList[basicMng.sceneManager.currentSceneId], basicMng,otype))
@@ -1098,6 +1100,9 @@ static void MaterialChangeView(BasicManager &basicMng,LowLevelRendermanager& ren
 	ImGui::InputInt("Ns:", &Ns);
 	ImGui::EndChild();
 
+	static int mtlType = 0;
+	ImGui::Combo("Object type", &mtlType, "matte\0phong\0emissive\0\0");
+
 	ImGui::BeginChild("buttons");
 
 	if (ImGui::Button("Set Defeat"))
@@ -1110,6 +1115,7 @@ static void MaterialChangeView(BasicManager &basicMng,LowLevelRendermanager& ren
 		illum = currentPara.illum;
 		Ni = currentPara.Ni;
 		Ns = currentPara.Ns;
+		mtlType = basicMng.materialsManager.dxMaterial[basicMng.materialsManager.currentMtlId].mtlType;
 	}
 	ImGui::SameLine();
 	if (ImGui::Button("OK"))
@@ -1123,7 +1129,7 @@ static void MaterialChangeView(BasicManager &basicMng,LowLevelRendermanager& ren
 		para.illum = illum;
 		para.Ni = Ni;
 		para.Ns = Ns;
-		renderMng.RenderMaterialChange(basicMng, basicMng.materialsManager.currentMtlId, para);
+		renderMng.RenderMaterialChange(basicMng, basicMng.materialsManager.currentMtlId, para,mtlType);
 	}
 	ImGui::SameLine();
 	if (ImGui::Button("Exit")) {  show_materila_change_view = false; }

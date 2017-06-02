@@ -162,6 +162,7 @@
   <ItemGroup>
     <ClInclude Include="basicmanager.h" />
     <ClInclude Include="BoundBox.h" />
+    <ClInclude Include="BRDF.h" />
     <ClInclude Include="cameramanager.h" />
     <ClInclude Include="dxcamera.h" />
     <ClInclude Include="dxdevice.h" />
@@ -183,10 +184,12 @@
     <ClInclude Include="rand.h" />
     <ClInclude Include="ray.h" />
     <ClInclude Include="RayLight.h" />
+    <ClInclude Include="RayMaterial.h" />
     <ClInclude Include="RayScene.h" />
     <ClInclude Include="RayTraceAlgorithm.h" />
     <ClInclude Include="RayTraceManager.h" />
     <ClInclude Include="RGB.h" />
+    <ClInclude Include="sample.h" />
     <ClInclude Include="scenenmanager.h" />
     <ClInclude Include="SeeAisa.h" />
     <ClInclude Include="shadermanager.h" />
@@ -203,6 +206,7 @@
   <ItemGroup>
     <ClCompile Include="basicmanager.cpp" />
     <ClCompile Include="BoundBox.cpp" />
+    <ClCompile Include="BRDF.cpp" />
     <ClCompile Include="cameramanager.cpp" />
     <ClCompile Include="dxcamera.cpp" />
     <ClCompile Include="dxdevice.cpp" />
@@ -221,9 +225,11 @@
     <ClCompile Include="objmanager.cpp" />
     <ClCompile Include="primitivemanager.cpp" />
     <ClCompile Include="RayLight.cpp" />
+    <ClCompile Include="RayMaterial.cpp" />
     <ClCompile Include="RayScene.cpp" />
     <ClCompile Include="RayTraceAlgorithm.cpp" />
     <ClCompile Include="RayTraceManager.cpp" />
+    <ClCompile Include="sample.cpp" />
     <ClCompile Include="scenemanager.cpp" />
     <ClCompile Include="shadermanager.cpp" />
     <ClCompile Include="shape.cpp" />

@@ -6,7 +6,7 @@
 
 enum ObjectType
 {
-	TriangleType,SphereType
+	TriangleType,SphereType,RectangleType,EmissiveType
 };
 
 class Unity {

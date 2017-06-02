@@ -7,7 +7,7 @@ void MaterialsManager::CreateDxMemory(int mtlNum)
 	dxMaterial = new DxMaterials[mtlNum];
 	for (int i = 0; i < mtlNum; i++)
 	{
-		dxMaterial[i].mtlType = mtlDiffuse;
+		dxMaterial[i].mtlType = matte;
 		dxMaterial[i].parameter.Ka = XMFLOAT4(0, 0, 0, 1);
 		dxMaterial[i].parameter.Kd = XMFLOAT4(0, 0, 0, 1);
 		dxMaterial[i].parameter.Ks = XMFLOAT4(0, 0, 0, 1);

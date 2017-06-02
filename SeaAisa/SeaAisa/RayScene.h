@@ -2,6 +2,7 @@
 #include"SeeAisa.h"
 #include"shape.h"
 #include"camera.h"
+#include"sample.h"
 
 class RayUnity
 {
@@ -17,8 +18,10 @@ public:
 	int unityNum;
 	RayUnity* unityList;
 
-
 	Camera camera;
+
+	Sampler* samplePTR;
+	int sampleNum;
 
 	int lightNum;
 	RayLight** lightList;
@@ -34,6 +37,7 @@ public:
 
 	}
 	
-
+	void SetSample(Sampler* sp);
+	void SetSamples(int n);
 
 };

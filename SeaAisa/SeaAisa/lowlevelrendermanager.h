@@ -32,5 +32,5 @@ public:
 	void ResizeRenderpipeline(BasicManager &basicMng,WindowsDevice &wnDev);
 	void ReverseUnityNormal(BasicManager &basicMng, Unity &unity);
 	void ReverseUnityNormalZaxis(BasicManager &basicMng, Unity &unity);
-	void RenderMaterialChange(BasicManager &basicMng, int materialID, MaterialParameter &para);
+	void RenderMaterialChange(BasicManager &basicMng, int materialID, MaterialParameter &para,int type);
 };

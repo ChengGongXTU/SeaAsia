@@ -8,6 +8,8 @@
 #include"basicmanager.h"
 #include"objmanager.h"
 #include"scenenmanager.h"
+#include"sample.h"
+#include"RayMaterial.h"
 
 class RayTraceManager
 {
@@ -16,13 +18,16 @@ public:
 
 	RayTraceAlgorithm* RayTrace;
 
+	int totalSampleNum;
 	void SetRayTrace(int choos);
 
 	void SceneLoad(DxScene &dxscene, BasicManager &basicMng);
 
 	void Render(float& pace);
 
-	RayTraceManager(){}
+	void SetSceneSample(int n);
+
+	RayTraceManager() { totalSampleNum = 100; }
 	~RayTraceManager(){}
 
 	

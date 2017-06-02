@@ -7,6 +7,7 @@
 #include"dxmaterials.h"
 #include"information.h"
 #include"ray.h"
+#include"RayMaterial.h"
 
 class RayTraceAlgorithm
 {
@@ -18,8 +19,13 @@ public:
 	virtual ColorRGB compute(Ray &ray) = 0;
 };
 
-class GlobalIllumination: public RayTraceAlgorithm
+//class GlobalIllumination: public RayTraceAlgorithm
+//{
+//public:
+//	ColorRGB compute(Ray &ray);
+//};
+
+class DirectLight :public RayTraceAlgorithm
 {
-public:
 	ColorRGB compute(Ray &ray);
 };

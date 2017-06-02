@@ -10,17 +10,25 @@
 #include"geometry.h"
 #include"transform.h"
 #include"texture.h"
-
+#include"sample.h"
 
 #include"BoundBox.h"
 #include"ray.h"
 #include"information.h"
+#include"RayMaterial.h"
 
 
 class Shape
 {
 public:
+	Sampler* samplePTR;
+
 	BoundBox bbox;
+
+	virtual void Creatmaterial(RayMaterial** ptr, DxMaterials& mtl) = 0;
+	virtual float Pdf(Info &info) = 0;
+	virtual Point GetSample(const Point &p) = 0;
+	virtual Vector GetNormal(const Point &p) = 0;
 	virtual void SetBoundBox() = 0;
 	virtual bool Intersection(Ray &ray, float *tHit, float *tHitError,Info &infro)= 0;
 	virtual void LoadDxUnity(Unity &unity, BasicManager &basicMng) = 0;
@@ -42,13 +50,18 @@ public:
 	Triangle(){}
 	~Triangle(){}
 
+
+	float Pdf(Info &info) { return 1.f; };
+	Point GetSample(const Point &p) { return Point(0, 0, 0); };
+	Vector GetNormal(const Point &p) { return Vector(0, 0, 0); };
 	void SetBoundBox();
 	bool Intersection(Ray &ray, float *tHit, float *tHitError, Info &infro);
 	void LoadDxUnity(Unity &unity, BasicManager &basicMng) {};
 	void ViewTransform(Transform &View) {};
+	void Creatmaterial(RayMaterial** ptr, DxMaterials& mtl) {};
 };
 
-class RayTriangleMesh:public Shape {
+class RayTriangleMesh :public Shape {
 public:
 
 	//number of triangles
@@ -84,13 +97,13 @@ public:
 	int mtlNum;
 
 	//material
-	DxMaterials *mtl;
+	RayMaterial** mtl;
 
 	//materila Index for each face;
 	int* mtli;
 
 	//texture buffer
-	
+
 	Texture* texture;
 
 	//BoundBox
@@ -106,9 +119,15 @@ public:
 		mtl = NULL;
 		mtli = NULL;
 		texture = NULL;
+		mtl = NULL;
+		mtli = NULL;
+		mtlNum = 0;
 
 	}
 
+	float Pdf(Info &info) { return 1.f; };
+	Point GetSample(const Point &p) { return Point(0, 0, 0); };
+	Vector GetNormal(const Point &p) { return Vector(0,0,0); };
 	void SetBoundBox();
 	bool Intersection(Ray &ray, float *tHit, float *tHitError,Info &infro);
 	void LoadDxUnity(Unity &unity, BasicManager &basicMng);
@@ -116,6 +135,7 @@ public:
 
 	friend bool FindFace(string &str, int &j, int &k, int &l);
 	friend class Triangle;
+	void Creatmaterial(RayMaterial** ptr, DxMaterials& mtl);
 
 };
 
@@ -129,26 +149,54 @@ class RaySphere: public Shape
 	//radius
 	float radius;
 
-	DxMaterials mtl;
+	RayMaterial* mtl;
 
 	Texture* texture;
 
 	//color
+	float Pdf(Info &info);
+	Point GetSample(const Point &p2);
+	Vector GetNormal(const Point &p2);
 	void SetBoundBox() {};
 	bool Intersection(Ray &ray, float *tHit, float *tHitError, Info &infro);
 	void LoadDxUnity(Unity &unity, BasicManager &basicMng);
 	void ViewTransform(Transform &View);
+	void Creatmaterial(RayMaterial** ptr, DxMaterials& mtl);
 
 	//mesh
 	RayTriangleMesh mesh;
 
 	//initialization
-	RaySphere() { p = Point(0, 0, 0); radius = 0; }
+	RaySphere() { p = Point(0, 0, 0); radius = 0; texture = NULL; mtl = NULL; }
 	~RaySphere(){ }
 
 };
 
+class RayRectangle :public Shape
+{
+public:
+	Point 		o;   			// corner vertex 
+	Vector		a;				// side
+	Vector		b;				// side
+	float		a_len_squared;	// square of the length of side a
+	float		b_len_squared;
+	Vector n;
+	Point uv;
 
+	RayMaterial* mtl;
+
+	virtual void SetBoundBox() {};
+	float Pdf(Info &info); 
+	Point GetSample(const Point &p); 
+	Vector GetNormal(const Point &p) { return n; };
+	bool Intersection(Ray &ray, float *tHit, float *tHitError, Info &infro);
+	void LoadDxUnity(Unity &unity, BasicManager &basicMng);
+	void ViewTransform(Transform &View);
+	void Creatmaterial(RayMaterial** ptr, DxMaterials& mtl);
+
+	RayRectangle() { o = Point(0, 0, 0); n = Vector(0, 0, 0); mtl = NULL; }
+
+};
 
 
 //bool BindTexture(Texture*tx, TriangleMesh &mesh) {
@@ -172,6 +220,7 @@ class RaySphere: public Shape
 //void SetCartoonStyle(int i,TriangleMesh &mesh){
 //	if (i == 1) mesh.flag = 2;
 //}
+
 
 
 
