@@ -5,11 +5,11 @@ achieve real-time render result in windows, and render any scene by ray trace fu
 
 Update:  
 ---------  
-* 2017.6.2:
-	 1, Add some material class into ray tracer, and bind it with shade function. It means that, every material could have its own shade function, and user can input different material and shader class in the same scene.
-	 2, Add a direct light ray trace function, and create a sample class for every material class.
+* 2017.6.2:  
+	 1, Add some material class into ray tracer, and bind it with shade function. It means that, every material could have its own shade function, and user can input different material and shader class in the same scene.    
+	 2, Add a direct light ray trace function, and create a sample class for every material class.  
 	 3, Delete path trace function.
-	 ![](https://github.com/ChengGongXTU/SeaAsia/blob/master/Direct%20Light.bmp)
+	 ![](https://github.com/ChengGongXTU/SeaAsia/blob/master/Direct%20Light.bmp)  
  
 * 2017.5.25:  
 	I add a ray trace function, witch include Diffuse BRDF, path trace and global illumination function.  
@@ -61,7 +61,7 @@ Update:
 		And the render result will show in windows.  
 	![](https://github.com/ChengGongXTU/SeaAsia/blob/master/2.jpg)  
 	
-	* More, you can use ray trace buttom to render current scene (make sure that "Ke" is not zeor in light-source object ).
+	* More, you can use ray trace buttom to render current scene (make sure that "Ke" is not zero in light-source object ).
 	  
 4.More suggestion：  
 -------------------  
