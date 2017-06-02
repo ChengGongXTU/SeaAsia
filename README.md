@@ -4,7 +4,13 @@ This is a simple render lab for real-time and offline render. The user can check
 achieve real-time render result in windows, and render any scene by ray trace function.  
 
 Update:  
----------  
+---------  
+* 2017.6.2:
+	 1, Add some material class into ray tracer, and bind it with shade function. It means that, every material could have its own shade function, and user can input different material and shader class in the same scene.
+	 2, Add a direct light ray trace function, and create a sample class for every material class.
+	 3, Delete path trace function.
+	 ![](https://github.com/ChengGongXTU/SeaAsia/blob/master/Direct%20Light.bmp)
+ 
 * 2017.5.25:  
 	I add a ray trace function, witch include Diffuse BRDF, path trace and global illumination function.  
 	![](https://raw.githubusercontent.com/ChengGongXTU/SeaAsia/master/Ray%20Trace%20render%20result.bmp)
