@@ -1,5 +1,6 @@
 SeaAsia 西娅西娅 - DX11+CPU RAY TRACE+ImGui Render.
 ====
+here is New version: https://github.com/ChengGongXTU/SeaAsia_v1.2 
 This is a simple render lab for real-time and offline render. The user can check and operate much of parameters of render-object in UI, 
 achieve real-time render result in windows, and render any scene by ray trace function.  
 
