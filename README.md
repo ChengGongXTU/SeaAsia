@@ -1,74 +1,92 @@
-SeaAsia 西娅西娅 - DX11+CPU RAY TRACE+ImGui Render.
+SeaAsia 西娅西娅 - C++/DX11/ImGui/Optix/Tensorflow Ray tracer
 ====
-here is New version: https://github.com/ChengGongXTU/SeaAsia_v1.2  
-This is a simple render lab for real-time and offline render. The user can check and operate much of parameters of render-object in UI, 
-achieve real-time render result in windows, and render any scene by ray trace function.  
+![](https://photos.google.com/photo/AF1QipNehgzsb75onXydaai5bhS_TZfhdsvLZnye7VOc)
 
-Update:  
+![](https://photos.google.com/photo/AF1QipMjcj3PmsFywC-82J_GJ-fqOHKoVS_WNWVxjY0z)
+
+![](https://photos.google.com/photo/AF1QipNt5CV8qR_8uAyz11cxvEJX6pTEwdLxYg7R36mR)
+
+SeaAsia is a ray tracing render  which is developed in Win10, it has two parts:
+
++ Real-time rendering part:
+
+  A deferred rendering part, which is made by C++ and DirectX11.
+
+  A  interaction UI,  which is made by ImGui.
+
++ Offline ray tracing part:
+
+  A GPU ray tracing part, which is made by Optix.
+
+  A deep learning denoiser, which is made by Tensorflow, the source code comes from NGPT:
+
+  https://github.com/mkettune/ngpt
+
+System of development:  
 ---------  
-* 2017.6.2:  
-	 1, Add some material class into ray tracer, and bind it with shade function. It means that, every material could have its own shade function, and user can input different material and shader class in the same scene.    
-	 2, Add a direct light ray trace function, and create a sample class for every material class.  
-	 3, Delete path trace function.  
-	 ![](https://github.com/ChengGongXTU/SeaAsia/blob/master/Direct%20Light.bmp)  
- 
-* 2017.5.25:  
-	I add a ray trace function, witch include Diffuse BRDF, path trace and global illumination function.  
-	![](https://raw.githubusercontent.com/ChengGongXTU/SeaAsia/master/Ray%20Trace%20render%20result.bmp)
+* Win10 + Visual studio 2017
+* CUDA v10.0
+* Anaconda2 : python3.7.3 + tensorflow-gpu
 
-1.Function
+Installing steps
 ----------
-* Transparency: much of paramaters can be see and change in UI, each operator will effects the real-time render result.
-* Shader Edit: you can change and input diffrent shader codes repeatedly, and watch th render result in window.
-* Ray Trace: render a scene by Ray Trace function.
-* The future function:  
-	* More Ray Trace function.  
-	* Some Non photorealistic rendering function.  
-	* and so on ...
-  
-  
-2.UI:  
+* 1st step: 
+
+  Install Visual studio, include windows SDK 10.0.17763, Visual studio 2017(v141), and DirectX.
+
+* 2nd step: 
+
+  Install CUDA v10.0. Because of Optix v5.0,  CUDA's version can be older than v10.0. Add CUDA path to Windows environment variables. 
+
+* 3rd step: 
+
+  Install Anaconda2, and add path to Windows environment variables. Then, input command" conda create -n tensorflow-gpu python=3" in CMD, to create a python3.7.3 environment. Use command"activate tensorflow-gpu" to activate this environment,  then install tensorflow-gpu by pip or conda.
+
+* 4th: 
+
+  Download source code from Github, and run it.
+Function 
 --------  
-![](https://github.com/ChengGongXTU/SeaAsia/blob/master/SeaAsia%20sample.png)
- 
- 
-3.How to use it  
-------------  
-* install and support:  
-	* Download project and open "SeaAisa.sln" by Visual Studio (I write C++ by VS 2015).  
-	* Make sure  your VS have input DX11 include and libs.
-	* Click  "run", and software can begin working.  
-	  
-* SeaAsia Usage:  
-	* First, check Main menu.  
-	It is the top of window, you can use it to open every function window.
-	![](https://github.com/ChengGongXTU/SeaAsia/blob/master/3.jpg)  
-	  
-	* Second, Choose a scene you want to render.  
-	Key Frame View shows all the scenes witch can be rendered, I set the max number of scene to be 24.  
-	![](https://github.com/ChengGongXTU/SeaAsia/blob/master/4.jpg)  
-	  
-	* Third, setting render resource.  
-	Resource Setting View provide the function of input, including triangle mesh, camera and light input.  
-		* 1.input unity by loading traingle mesh, material and texture image file. (Now, it can only load ".obj" and ".mtl"file).  
-		* 2.setting camera and light resource.  
-		* 3.a simple senen has been built.  
-  ![](https://github.com/ChengGongXTU/SeaAsia/blob/master/1.jpg)  
-	  
-	* Forth, setting render pipeline step by step:  
-		* 1.Create shader code.  
-		* 2.Setting render scene's ID.  
-		* 3.Create Camera and Light constant.  
-		And the render result will show in windows.  
-	![](https://github.com/ChengGongXTU/SeaAsia/blob/master/2.jpg)  
-	
-	* More, you can use ray trace buttom to render current scene (make sure that "Ke" is not zero in light-source object ).
-	  
-4.More suggestion：  
++ **Real-time rendering**:
+
+  + UI:  use ImGUI framework, 
+
+  + Scene Loading:  support FBX format.
+
+  + Texture Loading: support HDR/non-HDR image.
+
+  + Pipeline: DX11 deferred rendering pipeline with 4 RTs:
+
+    include these info: position/normal/albedo/roughness/metallic/shadow/depth.
+
+  + Color space: linear space
+
+  + Post-process: tone-mapping and linear-to-sRGB. 
+
+  + Material: similar to UE4 standard material, using roughness and metallic to control material.
+
+  + Light: directional/point/spot light for direct lighting, and IBL for environment lighting.
+
+  + Skybox: use HDR image for skybox and IBL
+
++ **GPU ray tracing**:
+
+  + Optix ray tracing part: include a basic path tracer, and a gradient path tracer.
+
+  + Deep learning part: use NGPT as denoise part for gradient path tracer, more detail see this link:
+
+    https://github.com/mkettune/ngpt.
+
+More suggestion：  
 -------------------  
 
 * Change it by yourself:  
-I will update a framework image to describe each part of this render. and tell you how to use and change source code, make it become your candy cat.  
-* If you have some suggestion about this software, or other idea about computer graphic and non-photorealistic rendering (especially in academically research!), send e-mail to me.  
+  you can implement your own ray tracing algorithm based on Optix, or improving real-time rendering appearence based on DX11.
+
+* Real-time ray tracing: 
+
+  Optix can be used for real-time ray tracing, but its efficiency isn't satisfied because of using CUDA Core. This render should update to DX12 to use DXR to implement real-time rat tracing.
+
+* If you have some suggestion about this software, or other idea about computer graphic and photorealistic rendering (especially in academically research!), send e-mail to me.  
 
 * My e-mail: 'chenggong.office@foxmail.com'.
