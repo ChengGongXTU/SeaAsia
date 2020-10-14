@@ -1,6 +1,7 @@
 SeaAsia 西娅西娅 - C++/DX11/ImGui/Optix/Tensorflow Ray tracer
 ====
-![](https://photos.google.com/photo/AF1QipNt5CV8qR_8uAyz11cxvEJX6pTEwdLxYg7R36mR)
+![Car](https://lh3.googleusercontent.com/pw/ACtC-3c4pApe-0yyP1MkTfi5er6mg9Ty3azo26EbOaJwfWmJA5P2ETcGSbs4pzBGl7gsQf0PLnu8g1Fv1wKfVQEWIic4S82ifhBPmXzYnPAwTK_-Nc8fYxGbJk7cQWOBJXMiin7tnwmgBFfa9M1QP0tLCwHN=w1567-h881-no?authuser=0)
+![Car](https://lh3.googleusercontent.com/pw/ACtC-3eF1HW8t0f7Wn0HJlCG3aeUfuLw0z-NW1dcsW3P2X_FXpvccApkr223HuqQYj3YmP9jPAi-ZbMlQ-xvtDa5__jgkP0M_zpV7w1t22WWPKqiLAN2WxjE2L4LEF9_7tpFynunkYdnj4mvVMb4FmSu6ZEM=w1567-h881-no?authuser=0)
 
 SeaAsia is a ray tracing render  which is developed in Win10, it has two parts:
 
@@ -18,8 +19,8 @@ SeaAsia is a ray tracing render  which is developed in Win10, it has two parts:
 
   https://github.com/mkettune/ngpt.  
 
-System of development:  
----------  
+System of development
+----------
 * Win10 + Visual studio 2017
 * CUDA v10.0
 * Anaconda2 : python3.7.3 + tensorflow-gpu
@@ -42,8 +43,8 @@ Installing steps
 
   Download source code from Github, and run it.
 
-  ## Function 
---------
+Function 
+----------
 + **Real-time rendering**:
 
   + UI:  use ImGUI framework, 
