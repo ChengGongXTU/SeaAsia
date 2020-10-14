@@ -1,9 +1,5 @@
 SeaAsia 西娅西娅 - C++/DX11/ImGui/Optix/Tensorflow Ray tracer
 ====
-![](https://photos.google.com/photo/AF1QipNehgzsb75onXydaai5bhS_TZfhdsvLZnye7VOc)
-
-![](https://photos.google.com/photo/AF1QipMjcj3PmsFywC-82J_GJ-fqOHKoVS_WNWVxjY0z)
-
 ![](https://photos.google.com/photo/AF1QipNt5CV8qR_8uAyz11cxvEJX6pTEwdLxYg7R36mR)
 
 SeaAsia is a ray tracing render  which is developed in Win10, it has two parts:
@@ -20,7 +16,7 @@ SeaAsia is a ray tracing render  which is developed in Win10, it has two parts:
 
   A deep learning denoiser, which is made by Tensorflow, the source code comes from NGPT:
 
-  https://github.com/mkettune/ngpt
+  https://github.com/mkettune/ngpt.  
 
 System of development:  
 ---------  
@@ -45,8 +41,9 @@ Installing steps
 * 4th: 
 
   Download source code from Github, and run it.
-Function 
---------  
+
+  ## Function 
+--------
 + **Real-time rendering**:
 
   + UI:  use ImGUI framework, 
@@ -73,8 +70,12 @@ Function
 
   + Optix ray tracing part: include a basic path tracer, and a gradient path tracer.
 
-  + Deep learning part: use NGPT as denoise part for gradient path tracer, more detail see this link:
+  + Light: support directional light and Environment lighting.
 
+  + Material: implement Disney standard PBR material, include several sub-materials. 
+  
+  + Deep learning part: use NGPT as denoise part for gradient path tracer, more detail see this link:
+  
     https://github.com/mkettune/ngpt.
 
 More suggestion：  
