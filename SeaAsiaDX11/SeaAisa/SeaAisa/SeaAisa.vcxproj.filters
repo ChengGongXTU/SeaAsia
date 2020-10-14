@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Lowlevelrender">
+      <UniqueIdentifier>{89b9693a-0743-411e-b1a1-9b561cf1c48b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Lowlevelrender">
+      <UniqueIdentifier>{6490da4f-3d2a-488d-8962-6d486d414785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI">
+      <UniqueIdentifier>{5f297e17-d906-4e5e-9da2-0b5a907a9c26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI">
+      <UniqueIdentifier>{9ec5977e-2e2b-4884-abf8-bfeb9784b324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RayTrace">
+      <UniqueIdentifier>{e89fdf0d-74f4-41cd-aaf6-f639b9590908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RayTrace">
+      <UniqueIdentifier>{3f94b93e-bbc4-4385-8fa1-07360a552542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DirectXTex">
+      <UniqueIdentifier>{a656ca60-3097-4eee-a40c-5e76ef1bb025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DDSTextureLoader">
+      <UniqueIdentifier>{8b7a77cf-c36a-42a7-be29-723740e3c2b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA File">
+      <UniqueIdentifier>{bf13297a-7c40-445c-96f4-4193bf3562ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RGBE">
+      <UniqueIdentifier>{657d5167-837f-44c6-be98-f00f15a64eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\RGBE">
+      <UniqueIdentifier>{987767e9-d0c7-4c5d-b810-3e7d5ce8cd03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SeeAisa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="transform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="objmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dxdevice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dxobj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="texturemanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dxcamera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dxlight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dxscene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="scenenmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="basicmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsDevice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="materialsmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dxmaterials.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shadermanager.h">
+      <Filter>头文件\Lowlevelrender</Filter>
+    </ClInclude>
+    <ClInclude Include="lightmanager.h">
+      <Filter>头文件\Lowlevelrender</Filter>
+    </ClInclude>
+    <ClInclude Include="primitivemanager.h">
+      <Filter>头文件\Lowlevelrender</Filter>
+    </ClInclude>
+    <ClInclude Include="cameramanager.h">
+      <Filter>头文件\Lowlevelrender</Filter>
+    </ClInclude>
+    <ClInclude Include="lowlevelrendermanager.h">
+      <Filter>头文件\Lowlevelrender</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_rect_pack.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_textedit.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_truetype.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="mainwindowui.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="wcharandwstring.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTraceManager.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTraceAlgorithm.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="shape.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RayLight.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RayScene.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundBox.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="information.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RGB.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="ray.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="sample.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDF.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="RayMaterial.h">
+      <Filter>头文件\RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\BC.h">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\BCDirectCompute.h">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\d3dx12.h">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\DDS.h">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\DirectXTex.h">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\DirectXTexP.h">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\filters.h">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\scoped.h">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSTextureLoader\DDSTextureLoader.h">
+      <Filter>头文件\DDSTextureLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>头文件\Lowlevelrender</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcessManager.h">
+      <Filter>头文件\Lowlevelrender</Filter>
+    </ClInclude>
+    <ClInclude Include="PathTracerManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OptixFilePath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PathTracerLight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowManager.h">
+      <Filter>头文件\Lowlevelrender</Filter>
+    </ClInclude>
+    <ClInclude Include="PathTracerMaterial.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PathReflection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PathIntegrator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rgbe.h">
+      <Filter>头文件\RGBE</Filter>
+    </ClInclude>
+    <ClInclude Include="GradientPathTracerManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GradientPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="transform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dxdevice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="objmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="texturemanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dxcamera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dxscene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="scenemanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="basicmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsDevice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dxobj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="materialsmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shadermanager.cpp">
+      <Filter>源文件\Lowlevelrender</Filter>
+    </ClCompile>
+    <ClCompile Include="cameramanager.cpp">
+      <Filter>源文件\Lowlevelrender</Filter>
+    </ClCompile>
+    <ClCompile Include="lightmanager.cpp">
+      <Filter>源文件\Lowlevelrender</Filter>
+    </ClCompile>
+    <ClCompile Include="primitivemanager.cpp">
+      <Filter>源文件\Lowlevelrender</Filter>
+    </ClCompile>
+    <ClCompile Include="lowlevelrendermanager.cpp">
+      <Filter>源文件\Lowlevelrender</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindowui.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="wcharandwstring.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="shape.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTraceManager.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTraceAlgorithm.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="information.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundBox.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="RayLight.cpp">
+      <Filter>头文件\RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="RayScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sample.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RayMaterial.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\BC.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\BC4BC5.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\BC6HBC7.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\BCDirectCompute.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexCompress.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexCompressGPU.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexConvert.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexD3D11.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexD3D12.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexDDS.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexFlipRotate.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexHDR.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexImage.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexMipmaps.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexMisc.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexNormalMaps.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexPMAlpha.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexResize.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexTGA.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexUtil.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DirectXTexWIC.cpp">
+      <Filter>头文件\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DDSTextureLoader\DDSTextureLoader.cpp">
+      <Filter>头文件\DDSTextureLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PathTracerManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowManagercpp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rgbe.cpp">
+      <Filter>源文件\RGBE</Filter>
+    </ClCompile>
+    <ClCompile Include="GradientPathTracerManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="DirectXTex\DirectXTex.inl">
+      <Filter>头文件\DirectXTex</Filter>
+    </None>
+    <None Include="hlsl.fx" />
+    <None Include="DirectXTex\Shaders\BC6HEncode.hlsl" />
+    <None Include="DirectXTex\Shaders\BC7Encode.hlsl" />
+    <None Include="DirectXTex\Shaders\Compiled\BC6HEncode_EncodeBlockCS.inc">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC6HEncode_EncodeBlockCS.pdb">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC6HEncode_TryModeG10CS.inc">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC6HEncode_TryModeG10CS.pdb">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC6HEncode_TryModeLE10CS.inc">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC6HEncode_TryModeLE10CS.pdb">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC7Encode_EncodeBlockCS.inc">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC7Encode_EncodeBlockCS.pdb">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC7Encode_TryMode02CS.inc">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC7Encode_TryMode02CS.pdb">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC7Encode_TryMode137CS.inc">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC7Encode_TryMode137CS.pdb">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC7Encode_TryMode456CS.inc">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DirectXTex\Shaders\Compiled\BC7Encode_TryMode456CS.pdb">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="OptiX SDK 6.0.0\optixPathTracer\optixGeometryTriangles.cu">
+      <Filter>CUDA File</Filter>
+    </None>
+    <None Include="OptiX SDK 6.0.0\optixPathTracer\optixPathTracer.cu">
+      <Filter>CUDA File</Filter>
+    </None>
+    <None Include="OptiX SDK 6.0.0\optixPathTracer\optixGradientPathTracer.cu">
+      <Filter>CUDA File</Filter>
+    </None>
+    <None Include="OptiX SDK 6.0.0\optixPathTracer\optixGradientPathTracerV2.cu">
+      <Filter>CUDA File</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Texture.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shader\PBRLightShading.fx" />
+    <FxCompile Include="Shader\Skybox.fx" />
+    <FxCompile Include="Shader\PostProcess.fx" />
+    <FxCompile Include="Shader\PBRGeometryPass.fx" />
+  </ItemGroup>
+</Project>
