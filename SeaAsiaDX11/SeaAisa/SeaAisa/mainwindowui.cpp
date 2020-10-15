@@ -20,7 +20,7 @@ static bool Show_RayTracer = false;
 static int SelectUnityID = -1;
 
 void MainWindowUI(WindowsDevice & winDev, BasicManager &basicMng, LowLevelRendermanager &renderMng, RayTraceManager& rayMng, 
-	PathTracerManager& optixPtMng, GradientPathTracer& optixGptMng, bool *p_open)
+	PathTracerManager& optixPtMng, GradientPathTracer& optixGptMng, PreIntergratManager& preInterMng, bool *p_open)
 {
 
 	if (show_scene_resource_view)	ScenenResourceView(winDev, basicMng, renderMng, &show_scene_resource_view);
@@ -178,6 +178,16 @@ void MainWindowUI(WindowsDevice & winDev, BasicManager &basicMng, LowLevelRender
 		if (ImGui::BeginMenu("Ray Trace Render "))
 		{
 			if (ImGui::MenuItem("Show the View", NULL, &Show_RayTracer));
+			ImGui::EndMenu();
+		}
+
+		//ray trace render
+		if (ImGui::BeginMenu("PreIntergrate Env Light "))
+		{
+			if (ImGui::Button("bake", ImVec2(150, 20)))
+			{
+				preInterMng.Bake(basicMng, renderMng);
+			}
 			ImGui::EndMenu();
 		}
 

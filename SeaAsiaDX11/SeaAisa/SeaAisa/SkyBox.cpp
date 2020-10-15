@@ -211,7 +211,8 @@ void SkyBox::Startup(BasicManager & basicMng, ShaderManager & shaderMng)
 	}
 
 	if (basicMng.textureManager.texViewPointer[3] != NULL)
-	{
+	{	
+		texIndex = 3;
 		skyBoxTexViewPointer = basicMng.textureManager.texViewPointer[3];
 		skyBoxTexSampleStatePointer = basicMng.textureManager.sampleStatePointer[3];
 	}
@@ -347,6 +348,7 @@ void SkyBox::ChooseTexture(TextureManager& texMng, int textureIndex)
 	if (textureIndex >= texMng.endTextureId)
 		return;
 
+	texIndex = textureIndex;
 	skyBoxTexViewPointer = texMng.texViewPointer[textureIndex];
 	skyBoxTexSampleStatePointer = texMng.sampleStatePointer[textureIndex];
 }

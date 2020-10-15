@@ -201,6 +201,7 @@
     <ClInclude Include="PathTracerManager.h" />
     <ClInclude Include="PathTracerMaterial.h" />
     <ClInclude Include="PostProcessManager.h" />
+    <ClInclude Include="PreIntegratManager.h" />
     <ClInclude Include="primitivemanager.h" />
     <ClInclude Include="rand.h" />
     <ClInclude Include="random.h" />
@@ -273,6 +274,7 @@
     <ClCompile Include="objmanager.cpp" />
     <ClCompile Include="PathTracerManager.cpp" />
     <ClCompile Include="PostProcessManager.cpp" />
+    <ClCompile Include="PreIntegratManager.cpp" />
     <ClCompile Include="primitivemanager.cpp" />
     <ClCompile Include="RayLight.cpp" />
     <ClCompile Include="RayMaterial.cpp" />
@@ -310,6 +312,7 @@
     <None Include="hlsl.fx">
       <FileType>Document</FileType>
     </None>
+    <None Include="OptiX SDK 6.0.0\optixPathTracer\optixPreIntergrat.cu" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

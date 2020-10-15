@@ -5,6 +5,7 @@
 #include"mainwindowui.h"
 #include"RayTraceManager.h"
 #include"GradientPathTracerManager.h"
+#include "PreIntegratManager.h"
 
 #include "atlbase.h"
 #include "atlstr.h"
@@ -54,6 +55,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pCmdLine, 
 	RayTraceManager RayMng;
 	PathTracerManager optixPtMng;
 	GradientPathTracer optixGptMng;
+	PreIntergratManager preInterMng;
 
 	basicMng = &basicManager;
 	renderMng = &lowlevelrendermanager;
@@ -98,7 +100,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pCmdLine, 
 		{
 			/*ImGui::SetNextWindowPos(ImVec2(650, 20), ImGuiSetCond_FirstUseEver);*/     // Normally user code doesn't need/want to call it because positions are saved in .ini file anyway. Here we just want to make the demo initial state a bit more friendly!
 			MainWindowUI(winDevice, basicManager, lowlevelrendermanager, RayMng,
-				optixPtMng, optixGptMng, &show_test_window);
+				optixPtMng, optixGptMng, preInterMng, &show_test_window);
 			{	
 
 

@@ -9,7 +9,7 @@
 #include"RayTraceManager.h"
 #include"PathTracerManager.h"
 #include"GradientPathTracerManager.h"
-
+#include "PreIntegratManager.h"
 
 #define IM_ARRAYSIZE(_ARR)  ((int)(sizeof(_ARR)/sizeof(*_ARR)))
 
@@ -35,4 +35,4 @@ static void ShowUnityProperty(bool* p_open, WindowsDevice & winDev, BasicManager
 static void ShowRayTracer(bool* p_open, BasicManager &basicMng, LowLevelRendermanager &renderMng, GradientPathTracer& optixGptMng);
 
 void MainWindowUI(WindowsDevice & winDev,BasicManager &basicMng, LowLevelRendermanager &renderMng, 
-	RayTraceManager& RayMng, PathTracerManager& optixPtMng, GradientPathTracer& optixGptMng,bool *p_open);
+	RayTraceManager& RayMng, PathTracerManager& optixPtMng, GradientPathTracer& optixGptMng, PreIntergratManager& preInterMng,bool *p_open);

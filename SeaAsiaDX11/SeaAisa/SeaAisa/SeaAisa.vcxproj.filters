@@ -240,6 +240,9 @@
     <ClInclude Include="GradientPath.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="PreIntegratManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -425,6 +428,9 @@
     <ClCompile Include="GradientPathTracerManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="PreIntegratManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
@@ -486,6 +492,9 @@
       <Filter>CUDA File</Filter>
     </None>
     <None Include="OptiX SDK 6.0.0\optixPathTracer\optixGradientPathTracerV2.cu">
+      <Filter>CUDA File</Filter>
+    </None>
+    <None Include="OptiX SDK 6.0.0\optixPathTracer\optixPreIntergrat.cu">
       <Filter>CUDA File</Filter>
     </None>
   </ItemGroup>

@@ -263,11 +263,11 @@ half4 PS(PS_INPUT i) : SV_TARGET
 		float Rv = 0.5 * (1.0 + sin(phi));
 		float2 Ruv = float2(Ru, Rv);
 
-		half4 iblCol = iblTexMap.SampleLevel(iblSamLinear, Ruv, roughness * 8);
+		half4 iblCol = iblTexMap.SampleLevel(iblSamLinear, Ruv, roughness * 5);
 		half3 spec_Indirect = iblCol.xyz * envBRDF * matMask;
 		L_indirect += spec_Indirect;
 
-		half4 iblHemisphereCol = iblTexMap.SampleLevel(iblSamLinear, Ruv, 8);
+		half4 iblHemisphereCol = iblTexMap.SampleLevel(iblSamLinear, Ruv, 5);
 		half3 diffuse_Indirect = diffuseCol * iblHemisphereCol.xyz;
 		L_indirect += diffuse_Indirect;
 	}

@@ -43,6 +43,7 @@ public:
 	ID3D11ShaderResourceView* skyboxCubemapSRV;
 	ID3D11SamplerState* skyBoxCubemapSampleState;
 	//test
+	int texIndex = 3;
 	ID3D11ShaderResourceView* skyBoxTexViewPointer;
 	ID3D11SamplerState* skyBoxTexSampleStatePointer;
 
